@@ -6,7 +6,134 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <section class="download">
+        <div class="download__background"></div>
+        <a class="download__button button" href="#">Cкачать приложение</a>
+<!-- я так понимаю здесь будут бэкграундом свгшки с псевдоэлементами, поэтому дополнительный элемент добавлять пока не буду-->
+        <p class="download__content">Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="features__question">Устали от серости мегаполиса?</p>
+        <p class="features__question">Нам есть, что вам предложить!</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <b class="features__title">Поднимает настроение</b>
+            <p class="features__content">Приложение позволит вам победить осенню хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <b class="features__title">Меняет мир вокруг</b>
+            <p class="features__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <b class="features__title">Заводит новых друзей</b>
+            <p class="features__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+<!-- и здесь я снова думаю бэкграундом вставить картинку с помощью псевдоэлемента-->
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы пользователей</h2>
+            <div class="reviews__list slider__list">
+                <blockquote class="reviews__item  slider__item">
+                  <cite class="reviews__author-name">Николай Петров</cite>
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </blockquote>
+                <blockquote class="reviews__item  slider__item">
+                  <cite class="reviews__author-name">Николай Петров</cite>
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </blockquote>
+                <blockquote class="reviews__item  slider__item">
+                  <cite class="reviews__author-name">Николай Петров</cite>
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </blockquote>
+                <p class="reviews__toggles slider__toggles">
+                   <button class="slider__toggle" type="button">1</button>
+                   <button class="slider__toggle" type="button">2</button>
+                   <button class="slider__toggle" type="button">3</button>
+                </p>
+            </div>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="price__wrapper slider">
+          <ul class="price__list slider__list">
+            <li class="price__item slider__item">
+              <div class="price-hit">ХИТ</div>
+              <b class="price__title">Стандарт</b>
+              <p class="price__cost">3,99 USD</p>
+            </li>
+            <li class="price__item slider__item">Розовый фильтр</li>
+            <li class="price__item slider__item">Смайлики</li>
+            <li class="price__item slider__item">Комментарии</li>
+            <p class="price__toggles slider__toggles">
+               <button class="slider__toggle" type="button">1</button>
+               <button class="slider__toggle" type="button">2</button>
+               <button class="slider__toggle" type="button">3</button>
+            </p>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <h3 class="contacts__head">Остались вопросы? Свяжитесь с нами!</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <b class="contacts__title">Звоните:</b>
+              <p class="contacts__text"><a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__title">Пишите:</b>
+              <p class="contacts__text"><a class="contacts__email">mail@htmlacademy.ru</a></p>
+            </li>
+            <li class="contacts__item">
+              <b class="contacts__title">Приезжайте в гости:</b>
+              <p class="contacts__text"><a class="contacts__address">ул. Большая Конюшенная, 19/8</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="map">
+        <h2 class="visually-hidden">Как до нас добраться на карте</h2>
+        <!--где-то тут карта должна будет вставиться, но я подозреваю, что она будет бэкграундом тоже-->
+      </section>
+
+    </footer>
 
   </body>
 </html>
