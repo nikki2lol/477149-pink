@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <a href="index.html" class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="PINK">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <section class="page-main__background">
+        <div class="page-main__text">Конкурс на самое безабешенное путешествие с Пинк</div>
+      </section>
+
+      <section class="page-main__appointment appointment">
+        <p class="appointment__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="appointment__input">
+            <label class="appointment__name" for="surname">Фамилия:</label>
+              <input type="text" id="surname" value="Укажите фамилию *">
+            <label class="appointment__name" for="name">Имя:</label>
+              <input type="text" id="name" value="Введите ваше имя *">
+            <label class="appointment__name" for="second-name">Отчество:</label>
+              <input type="text" id="second-name" value="Ну и отчество тоже *">
+          </div>
+          <div class="appointment__checkbox">
+            <legend class="appointment__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="appointment__list">
+              <li class="appointment__item">
+                <label class="appointment__label" for="first">Сделал селфи с акулой</label>
+                <input class="appointment__filter" type="checkbox" name="1" id="first" checked>
+              </li>
+              <li class="appointment__item">
+                <label class="appointment__label" for="second">Обгорел на пляже</label>
+                <input class="appointment__filter" type="checkbox" name="2" id="second" checked>
+              </li>
+              <li class="appointment__item">
+                <label class="appointment__label" for="third">Видел Чака Норриса</label>
+                <input class="appointment__filter" type="checkbox" name="3" id="third">
+              </li>
+              <li class="appointment__item">
+                <label class="appointment__label" for="fourth">Накупил сувениров</label>
+                <input class="appointment__filter" type="checkbox" name="4" id="fourth">
+              </li>
+              <li class="appointment__item">
+                <label class="appointment__label" for="fifth">Удержал башню</label>
+                <input class="appointment__filter" type="checkbox" name="5" id="fifth" checked>
+              </li>
+              <li class="appointment__item">
+                <label class="appointment__label" for="sixth">Разгромил отель</label>
+                <input class="appointment__filter" type="checkbox" name="6" id="sixth">
+              </li>
+            </ul>
+          </div>
+          <div class="appointment__input">
+            <label class="appointment__name" for="phone-number">Номер телефона</label>
+              <input type="text" id="phone-number" value="Номер, пожалуйста">
+            <label class="appointment__name" for="name">Адрес почты</label>
+              <input type="text" id="addres" value="Введите почту *">
+          </div>
+          <div class="appointment__radio radio">
+            <legend class="appointment__legend">С каким приложением путешествовали?</legend>
+            <ul class="radio__list">
+              <li class="radio__item">
+                <input class="radio__btn" type="radio" name="platform" value="iOS">Pink для iOS
+              </li>
+              <li class="radio__item">
+                <input class="radio__btn" type="radio" name="platform" value="Android">Pink для Android
+              </li>
+              <li class="radio__item">
+                <input class="radio__btn" type="radio" name="platform" value="Windows">Windows Phone
+              </li>
+            </ul>
+          </div>
+          <div class="appointment__textarea textarea">
+            <label class="appointment__name" for="history">Опишите свои эмоции</label>
+            <input class="textarea__body" type="textarea" name="history" id="history">
+          </div>
+          <button type="submit" class="appointment__button">Отправить форму</button>
+          <small class="appointment__necessarily">* — обязательные поля</small>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo logo">
+          <a class="logo__link">
+            <img class="logo__image" src="img/logotype-mobile.svg" width="150" height="40" alt="PINK">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Наш Твиттер</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Наш Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Наш Youtube канал</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__image" src="http://placehold.it/24x37" width="24" height="37">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
