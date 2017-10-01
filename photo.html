@@ -3,143 +3,145 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-    <header class="page-header">
-      <nav class="main-nav">
-        <a href="index.html" class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="PINK">
-        </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-      </nav>
-    </header>
-
-
-    <main class="page-main">
-
-      <section class="page-main__background">
-        <div class="page-main__text">Фотографии пользователей</div>
-      </section>
-
-      <div class="page_main__prelude">
-        <p class="page-main__prelude-text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
-      </div>
-
-      <section class="page-main__photos photos">
-        <div class="photos__panorama panorama">
-          <div class="panorama__photo"><img class="panorama__image" src="http://placehold.it/320x137" width="320" height="137"></div>
-          <div class="panorama__info">
-            <b class="panorama__user">Анна</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="panorama__time">(5 минут назад)</p>
-            <p class="panorama__content">Прыгать или нет?? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задвайте свои вопросы!</p>
-            <p class="panorama__counter">Нравится: 215</p>
-          </div>
-        </div>
-        <div class="photos__shoot shoot">
-          <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
-          <div class="shoot__info">
-            <b class="shoot__user">Левон</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(5 часов назад)</p>
-            <p class="shoot__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="shoot__counter">Нравится: 356</p>
-          </div>
-        </div>
-        <div class="photos__shoot shoot">
-          <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
-          <div class="shoot__info">
-            <b class="shoot__user">Антон</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(12 часов назад)</p>
-            <p class="shoot__content">Соседи будут рады!</p>
-            <p class="shoot__counter">Нравится: 666</p>
-          </div>
-        </div>
-        <div class="photos__shoot shoot">
-          <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
-          <div class="shoot__info">
-            <b class="shoot__user">Борис</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(20 часов назад)</p>
-            <p class="shoot__content">Здесь могла быть ваша цитата о высоком и вечном</p>
-            <p class="shoot__counter">Нравится: 215</p>
-          </div>
-        </div>
-        <div class="photos__shoot shoot">
-          <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
-          <div class="shoot__info">
-            <b class="shoot__user">Сергей</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(25 часов назад)</p>
-            <p class="shoot__content">Самая кубанская в мире!</p>
-            <p class="shoot__counter">Нравится: 4</p>
-          </div>
-        </div>
-        <div class="photos__shoot shoot">
-          <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
-          <div class="shoot__info">
-            <b class="shoot__user">Максим</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(40 часов назад)</p>
-            <p class="shoot__content">Где снег-то?</p>
-            <p class="shoot__counter">Нравится: 150</p>
-          </div>
-        </div>
-        <div class="photos__shoot shoot">
-          <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
-          <div class="shoot__info">
-            <b class="shoot__user">Надежда</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(45 часов назад)</p>
-            <p class="shoot__content">Всем GM и взаимные лайки!</p>
-            <p class="shoot__counter">Нравится: 2560</p>
-          </div>
-        </div>
-      </section>
-
-      <div class="page-main__epilogue">
-        <p class="page-main__epilogue-text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-      </div>
-
-      <section class="page-main__export export">
-        <img class="export__image" src="http://placehold.it/280x375" width="280" height="375">
-        <div class="export__filters"><!--пока тоже без понятия, как эти филтры вставить--></div>
-        <a class="export__button button--red" href="#">Запостить</a>
-        <a claas="export__button button--grey" href="#">Отмена</a>
-      </section>
-
-    </main>
-
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__logo logo">
-          <a class="logo__link">
-            <img class="logo__image" src="img/logotype-mobile.svg" width="150" height="40" alt="PINK">
+    <div class="all-container">
+      <header class="page-header">
+        <nav class="main-nav">
+          <a href="index.html" class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="PINK">
           </a>
-        </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Наш Твиттер</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Наш Facebook</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Наш Youtube канал</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__image" src="http://placehold.it/24x37" width="24" height="37">
-          </a>
-        </div>
-      </div>
-    </footer>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+        </nav>
+      </header>
 
+
+      <main class="page-main">
+
+        <section class="page-main__background">
+          <div class="page-main__text">Фотографии пользователей</div>
+        </section>
+
+        <div class="page_main__prelude">
+          <p class="page-main__prelude-text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+        </div>
+
+        <section class="page-main__photos photos">
+          <div class="photos__panorama panorama">
+            <div class="panorama__photo"><img class="panorama__image" src="http://placehold.it/320x137" width="320" height="137"></div>
+            <div class="panorama__info">
+              <b class="panorama__user">Анна</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="panorama__time">(5 минут назад)</p>
+              <p class="panorama__content">Прыгать или нет?? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задвайте свои вопросы!</p>
+              <p class="panorama__counter">Нравится: 215</p>
+            </div>
+          </div>
+          <div class="photos__shoot shoot">
+            <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
+            <div class="shoot__info">
+              <b class="shoot__user">Левон</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(5 часов назад)</p>
+              <p class="shoot__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="shoot__counter">Нравится: 356</p>
+            </div>
+          </div>
+          <div class="photos__shoot shoot">
+            <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
+            <div class="shoot__info">
+              <b class="shoot__user">Антон</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(12 часов назад)</p>
+              <p class="shoot__content">Соседи будут рады!</p>
+              <p class="shoot__counter">Нравится: 666</p>
+            </div>
+          </div>
+          <div class="photos__shoot shoot">
+            <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
+            <div class="shoot__info">
+              <b class="shoot__user">Борис</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(20 часов назад)</p>
+              <p class="shoot__content">Здесь могла быть ваша цитата о высоком и вечном</p>
+              <p class="shoot__counter">Нравится: 215</p>
+            </div>
+          </div>
+          <div class="photos__shoot shoot">
+            <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
+            <div class="shoot__info">
+              <b class="shoot__user">Сергей</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(25 часов назад)</p>
+              <p class="shoot__content">Самая кубанская в мире!</p>
+              <p class="shoot__counter">Нравится: 4</p>
+            </div>
+          </div>
+          <div class="photos__shoot shoot">
+            <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
+            <div class="shoot__info">
+              <b class="shoot__user">Максим</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(40 часов назад)</p>
+              <p class="shoot__content">Где снег-то?</p>
+              <p class="shoot__counter">Нравится: 150</p>
+            </div>
+          </div>
+          <div class="photos__shoot shoot">
+            <div class="shoot__photo"><img class="shoot__image" src="http://placehold.it/280x180" width="280" height="180"></div>
+            <div class="shoot__info">
+              <b class="shoot__user">Надежда</b><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><p class="shoot__time">(45 часов назад)</p>
+              <p class="shoot__content">Всем GM и взаимные лайки!</p>
+              <p class="shoot__counter">Нравится: 2560</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="page-main__epilogue">
+          <p class="page-main__epilogue-text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+
+        <section class="page-main__export export">
+          <img class="export__image" src="http://placehold.it/280x375" width="280" height="375">
+          <div class="export__filters"><!--пока тоже без понятия, как эти филтры вставить--></div>
+          <a class="export__button button--red" href="#">Запостить</a>
+          <a claas="export__button button--grey" href="#">Отмена</a>
+        </section>
+
+      </main>
+
+      <footer class="inner-footer">
+          <div class="inner-footer__logo full-logo">
+            <a class="full-logo__link">
+              <img class="full-logo__image" src="img/logotype-mobile.svg" width="150" height="40" alt="PINK">
+            </a>
+          </div>
+          <div class="inner-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">Наш Твиттер</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">Наш Facebook</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#">Наш Youtube канал</a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__image" src="http://placehold.it/24x37" width="24" height="37">
+            </a>
+          </div>
+      </footer>
+    </div>
   </body>
 </html>
