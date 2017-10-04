@@ -8,6 +8,11 @@
   background-position: bottom -40px center;
 }
 
+.features__wrapper {
+  width: 280px;
+  padding: 0 20px;
+}
+
 .features__enter {
   min-height: 216px;
   background-color: #ffffff;
@@ -48,4 +53,45 @@
   color: #283645;
   padding-bottom: 30px;
   margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .features {
+    background-size: 40%;
+    background-position: left 20px bottom -60px;
+    min-height: 0;
+  }
+
+  .features__wrapper {
+    min-width: 620px;
+    padding: 0 20px;
+  }
+
+  .features__list {
+    text-align: left;
+    width: 50%;
+    padding-left: 50%;
+  }
+
+  .features__question {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #283645;
+    padding-top: 60px;
+
+    &:last-child {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__wrapper {
+    min-width: 940px;
+    padding: 0 130px;
+  }
+
+
 }

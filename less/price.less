@@ -8,6 +8,11 @@
   background-position: auto;
 }
 
+.price__wrapper {
+  min-width: 280px;
+  padding: 0 20px;
+}
+
 .price__list {
   border-collapse: collapse;
 }
@@ -39,4 +44,18 @@
 .price__toggles {
   padding-top: 35px;
   padding-bottom: 40px;
+}
+
+@media (min-width: 660px) {
+  .price__wrapper {
+    min-width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price__wrapper {
+    min-width: 940px;
+    padding: 0 20px;
+  }
 }

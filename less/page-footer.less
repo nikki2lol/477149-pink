@@ -1,10 +1,18 @@
 .page-footer {
   min-height: 612px;
+  min-width: 320px;
   text-align: center;
   margin: 0 auto;
+  background-color: #ffffff;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: bottom center;
+}
+
+.page-footer__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .page-footer__contacts {
@@ -44,4 +52,18 @@
   color: #d22856;
   font-size: 24px;
   font-weight: 300;
+}
+
+@media (min-width: 660px) {
+  .page-footer__wrapper {
+    min-width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    min-width: 940px;
+    padding: 0 20px;
+  }
 }

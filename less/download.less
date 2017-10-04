@@ -9,17 +9,19 @@
   background-repeat: no-repeat, no-repeat;
   background-size: content, cover;
   background-position: 50% 40%, top;
-  margin-top: -100px;
+
 }
 
 .download__wrapper {
   min-height: 220px;
   padding-top: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .download__list {
   display: flex; /* временно пропишу флексбокс, чтобы можно было примерно подсчитать расстояния отступов */
-  justify-content: center;
+  justify-content: space-around;
   align-items: baseline;
   margin-top: 30px;
   margin-bottom: 14px;
@@ -35,26 +37,35 @@
 
 @media (min-width: 660px) {
   .download__wrapper {
-    padding-top: 200px;
-    display: block;
-    width: 50%;
+    width: 620px;
+    padding: 0 20px;
   }
 
   .download__background {
     background-position: 150px bottom, top;
     background-size: 75%, cover;
   }
+
+  .download__container {
+    padding-top: 200px;
+    width: 50%;
+  }
 }
 
 @media (min-width: 1200px) {
   .download__wrapper {
+    width: 940px;
+    padding: 0 130px;
+  }
+
+  .download__container {
     padding-top: 200px;
     display: block;
     width: 25%;
   }
 
   .download__background {
-    background-position: 150px bottom, top;
-    background-size: 75%, cover;
+    background-position: 475px 21px, top;
+    background-size: 45%, cover;
   }
 }

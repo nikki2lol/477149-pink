@@ -1,5 +1,11 @@
 .reviews {
   text-align: center;
+  background-color: #ffffff;
+}
+
+.reviews__wrapper {
+  min-width: 280px;
+  padding: 0 20px;
 }
 
 .reviews__item {
@@ -21,4 +27,18 @@
 
 .reviews__toggles {
   margin-bottom: 40px;
+}
+
+@media (min-width: 660px) {
+  .reviews__wrapper {
+    min-width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews__wrapper {
+    min-width: 940px;
+    padding: 0 130px;
+  }
 }
