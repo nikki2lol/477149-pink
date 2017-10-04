@@ -1,21 +1,25 @@
 .download {
-  min-height: 666px;
   background-color: #1d2631;
   text-align: center;
 }
 
 .download__background {
-  min-height: 400px;
+  min-height: 620px;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-size: content, cover;
-  background-position: bottom left, center;
-  margin-bottom: 40px;
+  background-position: 50% 40%, top;
+  margin-top: -100px;
+}
+
+.download__wrapper {
+  min-height: 220px;
+  padding-top: 500px;
 }
 
 .download__list {
   display: flex; /* временно пропишу флексбокс, чтобы можно было примерно подсчитать расстояния отступов */
-  justify-content: space-around;
+  justify-content: center;
   align-items: baseline;
   margin-top: 30px;
   margin-bottom: 14px;
@@ -27,4 +31,30 @@
   font-weight: 300;
   color: #ffffff;
   margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .download__wrapper {
+    padding-top: 200px;
+    display: block;
+    width: 50%;
+  }
+
+  .download__background {
+    background-position: 150px bottom, top;
+    background-size: 75%, cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .download__wrapper {
+    padding-top: 200px;
+    display: block;
+    width: 25%;
+  }
+
+  .download__background {
+    background-position: 150px bottom, top;
+    background-size: 75%, cover;
+  }
 }
