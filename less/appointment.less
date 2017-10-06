@@ -1,5 +1,33 @@
 .appointment {
-  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.appointment__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment__wrapper {
+  width: 280px;
+  padding: 0 20px;
+}
+
+.appointment__fieldset {
+  border: 0 solid transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.appointment__fieldset--gray {
+  background-color: #f2f2f2;
+}
+
+.appointment__legend {
+  text-align: center;
+}
+
+.appointment__legend--hidden {
+  display: none;
 }
 
 .appointment__inputs {
@@ -20,14 +48,13 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 15px;
-  padding-left: 42px;
+  padding-left: 22px;
 }
 
 .appointment__input {
   width: 236px;
   border: 2px solid #e5e5e5;
   padding: 18px 20px 18px 20px;
-  margin-left: 20px;
 }
 
 .appointment__checkbox {
@@ -48,9 +75,9 @@
 .appointment__item {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 70px;
+  padding-left: 50px;
 
-  &:last-child {
+  .appointment__item:last-child {
     padding-bottom: 42px;
   }
 }
@@ -60,8 +87,6 @@
   color: #ffffff;
   background-color: #2aab6d;
   text-transform: uppercase;
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
   padding: 22px 49px 22px 49px;
 }
@@ -76,4 +101,55 @@
 
 .appointment__pink {
   color: #d22856;
+}
+
+.appointment_container--end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 660px) {
+  .appointment__wrapper {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .appointment__text {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .appointment__fieldset {
+    border: 2px solid #e5e5e5;
+    padding: 0.35em 0.75em 0.625em;
+    background-color: #ffffff;
+  }
+
+  .appointment__legend--hidden {
+    display: block;
+  }
+
+  .appointment__form:nth-child(1) {
+    order: 1;
+  }
+
+  .appointment__form:nth-child(2) {
+    order: 4;
+  }
+
+  .appointment__form:nth-child(3) {
+    order: 3;
+  }
+
+  .appointment__form:nth-child(4) {
+    order: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .appointment__wrapper {
+    width: 940px;
+    padding: 0 130px;
+  }
 }

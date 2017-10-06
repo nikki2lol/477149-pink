@@ -9,30 +9,35 @@
   </head>
   <body>
 
-    <div class="all-container">
       <header class="page-header">
-        <nav class="main-nav">
-          <a href="index.html" class="page-header__logo">
-            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="PINK">
-          </a>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-        </nav>
+        <div class="page-header__wrapper">
+          <nav class="main-nav">
+            <div class="page-header__content">
+            <div class="page-header__logo">
+              <a class="logo__link" href="index.html">
+                <img class="logo__image1" src="logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+                <img class="logo__image2" src="logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+                <img class="logo__image3" src="logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+              </a>
+            </div>
+            <div class="logo__button"><button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button></div></div>
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--active" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
+              </ul>
+          </nav>
+        </div>
       </header>
-
 
       <main class="page-main">
 
@@ -40,88 +45,95 @@
           <div class="page-main__text">Фотографии пользователей</div>
         </section>
 
-        <div class="page_main__prelude">
+        <section class="page-main__prelude">
           <div class="page-main__prelude-text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</div>
-        </div>
+        </section>
 
         <section class="page-main__photos photos">
-
-          <div class="photos__shoot shoot">
-            <div class="shoot__panorama"><img class="shoot__image" src="../img/panorama-mobile@1x.jpg" width="320" height="137"></div>
-            <div class="shoot__info">
-              <div class="shoot__user">Анна</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="panorama__time">(5 минут назад)</div>
-              <div class="shoot__content">Прыгать или нет?? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задвайте свои вопросы!</div>
-              <div class="shoot__counter">Нравится: 215</div>
+          <div class="photos__wrapper">
+            <div class="photos__panorama panorama">
+              <div class="panorama__shoot"><img class="panorama__image" src="../img/panorama-mobile@1x.jpg" width="320" height="137"></div>
+              <div class="shoot__info">
+                <div class="shoot__user">Анна</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(5 минут назад)</div>
+                <div class="shoot__content">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</div>
+                <div class="shoot__counter">Нравится: 215</div>
+              </div>
             </div>
-          </div>
-          <div class="photos__shoot shoot">
-            <div class="shoot__photo"><img class="shoot__image" src="../img/photo-car-mobile@1x.jpg" width="280" height="180"></div>
-            <div class="shoot__info">
-              <div class="shoot__user">Левон</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(5 часов назад)</div>
-              <div class="shoot__content">Вчера он на луну летал, сегодня в руки к нам попал.</div>
-              <div class="shoot__counter">Нравится: 356</div>
-            </div>
-          </div>
-          <div class="photos__shoot shoot">
-            <div class="shoot__photo"><img class="shoot__image" src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180"></div>
-            <div class="shoot__info">
-              <div class="shoot__user">Антон</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(12 часов назад)</div>
-              <div class="shoot__content">Соседи будут рады!</div>
-              <div class="shoot__counter">Нравится: 666</div>
-            </div>
-          </div>
-          <div class="photos__shoot shoot">
-            <div class="shoot__photo"><img class="shoot__image" src="../img/photo-window-mobile@1x.jpg" width="280" height="180"></div>
-            <div class="shoot__info">
-              <div class="shoot__user">Борис</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(20 часов назад)</div>
-              <div class="shoot__content">Здесь могла быть ваша цитата о высоком и вечном</div>
-              <div class="shoot__counter">Нравится: 215</div>
-            </div>
-          </div>
-          <div class="photos__shoot shoot">
-            <div class="shoot__photo"><img class="shoot__image" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180"></div>
-            <div class="shoot__info">
-              <div class="shoot__user">Сергей</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(25 часов назад)</div>
-              <div class="shoot__content">Самая кубанская в мире!</div>
-              <div class="shoot__counter">Нравится: 4</div>
-            </div>
-          </div>
-          <div class="photos__shoot shoot">
-            <div class="shoot__photo"><img class="shoot__image" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180"></div>
-            <div class="shoot__info">
-              <div class="shoot__user">Максим</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(40 часов назад)</div>
-              <div class="shoot__content">Где снег-то?</div>
-              <div class="shoot__counter">Нравится: 150</div>
-            </div>
-          </div>
-          <div class="photos__shoot shoot">
-            <div class="shoot__photo"><img class="shoot__image" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180"></div>
-            <div class="shoot__info">
-              <div class="shoot__user">Надежда</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(45 часов назад)</div>
-              <div class="shoot__content">Всем GM и взаимные лайки!</div>
-              <div class="shoot__counter">Нравится: 2560</div>
+            <div class="photos__shoot shoot">
+              <div class="shoot__container">
+                <div class="shoot__photo"><img class="shoot__image" src="../img/photo-car-mobile@1x.jpg" width="280" height="180"></div>
+                <div class="shoot__info">
+                  <div class="shoot__user">Левон</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(5 часов назад)</div>
+                  <div class="shoot__content">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+                  <div class="shoot__counter">Нравится: 356</div>
+                </div>
+              </div>
+              <div class="shoot__container">
+                <div class="shoot__photo"><img class="shoot__image" src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180"></div>
+                <div class="shoot__info">
+                  <div class="shoot__user">Антон</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(12 часов назад)</div>
+                  <div class="shoot__content">Соседи будут рады!</div>
+                  <div class="shoot__counter">Нравится: 666</div>
+                </div>
+              </div>
+              <div class="shoot__container">
+                <div class="shoot__photo"><img class="shoot__image" src="../img/photo-window-mobile@1x.jpg" width="280" height="180"></div>
+                <div class="shoot__info">
+                  <div class="shoot__user">Борис</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(20 часов назад)</div>
+                  <div class="shoot__content">Здесь могла быть ваша цитата о высоком и вечном</div>
+                  <div class="shoot__counter">Нравится: 215</div>
+                </div>
+              </div>
+              <div class="shoot__container">
+                <div class="shoot__photo"><img class="shoot__image" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180"></div>
+                <div class="shoot__info">
+                  <div class="shoot__user">Сергей</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(25 часов назад)</div>
+                  <div class="shoot__content">Самая кубанская в мире!</div>
+                  <div class="shoot__counter">Нравится: 4</div>
+                </div>
+              </div>
+              <div class="shoot__container">
+                <div class="shoot__photo"><img class="shoot__image" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180"></div>
+                <div class="shoot__info">
+                  <div class="shoot__user">Максим</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(40 часов назад)</div>
+                  <div class="shoot__content">Где снег-то?</div>
+                  <div class="shoot__counter">Нравится: 150</div>
+                </div>
+              </div>
+              <div class="shoot__container">
+                <div class="shoot__photo"><img class="shoot__image" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180"></div>
+                <div class="shoot__info">
+                  <div class="shoot__user">Надежда</div><!--тут моих знаний недостаточно, чтобы сделать счетчик пока что--><div class="shoot__time">(45 часов назад)</div>
+                  <div class="shoot__content">Всем GM и взаимные лайки!</div>
+                  <div class="shoot__counter">Нравится: 2560</div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <div class="page-main__epilogue">
+        <section class="page-main__epilogue">
           <div class="page-main__epilogue-text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</div>
-        </div>
+        </section>
 
         <section class="page-main__export export">
-          <img class="export__image" src="../img/photo-road-mobile@1x.jpg" width="280" height="375">
-          <div class="export__filters"><!--пока тоже без понятия, как эти филтры вставить--></div>
-          <a class="export__button button--red" href="#">Запостить</a>
-          <a claas="export__button button--gray" href="#">Отмена</a>
+          <div class="export__wrapper">
+            <div class="export__image-container"><img class="export__image" src="../img/photo-road-mobile@1x.jpg" width="280" height="375"></div>
+            <div class="export__filters"><!--пока тоже без понятия, как эти филтры вставить--></div>
+            <div class="export__buttons-container">
+              <a class="export__button button--red" href="#">Запостить</a>
+              <a claas="export__button button--gray" href="#">Отмена</a>
+            </div>
+          </div>
         </section>
 
       </main>
 
       <footer class="inner-footer">
         <div class="inner-footer__wrapper">
-          <div class="inner-footer__logo full-logo">
-            <a class="full-logo__link" href="index.html">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewbox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+          <div class="inner-footer__logo">
+            <a class="inner-footer__link" href="index.html">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewbox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
                   <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                   <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -162,7 +174,7 @@
               </li>
             </ul>
           </div>
-          <div class="inner-footer__copyright copyright">
+          <div class="main-footer__copyright copyright">
             <div class="copyright__text">Разработано:</div>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML-ACADEMY</span>
               <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewbox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
@@ -172,6 +184,5 @@
           </div>
         </div>
       </footer>
-    </div>
   </body>
 </html>
