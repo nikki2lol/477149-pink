@@ -1,6 +1,7 @@
 .download {
   background-color: #1d2631;
   text-align: center;
+  padding-bottom: 35px;
 }
 
 .download__background {
@@ -26,6 +27,10 @@
   margin-bottom: 14px;
 }
 
+.download__preview {
+  display: none;
+}
+
 .download__content {
   font-size: 14px;
   line-height: 24px;
@@ -46,8 +51,18 @@
   }
 
   .download__container {
-    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
+  }
+
+  .download__preview {
+    display: block;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #ffffff;
   }
 }
 
@@ -66,5 +81,10 @@
   .download__background {
     background-position: 475px 21px, top;
     background-size: 45%, cover;
+  }
+
+  .download__preview {
+    font-size: 50px;
+    line-height: 50px;
   }
 }
