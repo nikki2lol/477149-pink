@@ -6,13 +6,24 @@
   background-position: center left;
 }
 
+.research__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 @media (min-width: 660px) {
   .research {
     display: flex;
     text-align: left;
-    padding-left: 50%;
     padding-top: 95px;
     padding-bottom: 80px;
+  }
+
+  .research__wrapper {
+    min-width: 620px;
+    padding: 0 20px;
+    margin: 0 auto;
   }
 
   .research__title {
@@ -20,6 +31,7 @@
     line-height: 36px;
     font-weight: 700;
     color: #000000;
+    margin-left: 50%;
   }
 
   .research__content {
@@ -27,6 +39,7 @@
     line-height: 24px;
     font-weight: 400;
     color: #283645;
+    margin-left: 50%;
   }
 
   .research__link {
@@ -35,14 +48,31 @@
     font-weight: 400;
     color: #d22856;
     text-decoration: underline;
+    margin-left: 50%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .research {
-    width: 525px;
-    padding-left: 370px;
     padding-bottom: 115px;
     padding-top: 150px;
+    background-color: #f2f2f2;
+  }
+
+  .research__wrapper {
+    min-width: 940px;
+    padding: 0 10px;
+  }
+
+  .research__title {
+    margin-left: 370px;
+  }
+
+  .research__content {
+    margin-left: 370px;
+  }
+
+  .research__link {
+    margin-left: 370px;
   }
 }

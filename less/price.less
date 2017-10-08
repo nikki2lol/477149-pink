@@ -12,16 +12,25 @@
 .price__wrapper {
   min-width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
+}
+
+.price__empty {
+  display: block;
 }
 
 .price__list {
   border-collapse: collapse;
 }
 
+.price__field {
+  border: 2px solid #e5e5e5;
+  padding: 20px 24px 20px 24px;
+}
+
 .price__topic {
   color: #ffffff;
   background-color: #283645;
-  background-image: url("../img/bg-hit-tablet.svg");
   background-repeat: no-repeat;
   background-size: content;
   background-position: auto;
@@ -40,6 +49,9 @@
 .price__item {
   font-size: 14px;
   text-transform: 30px;
+  width: 31px;
+  height: 31px;
+  border: 2px solid black;
 }
 
 .price__toggles {
@@ -59,7 +71,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .price {
     padding-top: 150px;
     padding-bottom: 95px;
@@ -67,6 +79,6 @@
 
   .price__wrapper {
     min-width: 940px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }

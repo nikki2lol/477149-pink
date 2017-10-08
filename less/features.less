@@ -1,17 +1,19 @@
 .features {
+
   text-align: center;
   background-color: #f2f2f2;
   padding-top: 80px;
   padding-bottom: 320px;
-  /*background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: bottom -40px center; */
+  background-position: bottom -40px center;
 }
 
 .features__wrapper {
   width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .features__enter {
@@ -21,11 +23,6 @@
 
 .features__list {
   padding-top: 70px;
-  /*background-image: url("../img/bg-triangle-white1.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: auto; */
-  margin: 0 auto;
 }
 
 .features__title {
@@ -33,7 +30,6 @@
   font-weight: 700;
   color: #000000;
   padding-bottom: 15px;
-  margin: 0 auto;
 }
 
 .features__content {
@@ -41,16 +37,16 @@
   line-height: 24px;
   color: #283645;
   padding-bottom: 30px;
-  margin: 0 auto;
 }
 
 @media (min-width: 660px) {
   .features {
-    /*background-size: 40%;
-    background-position: left 20px bottom -60px;
-    min-height: 0; */
     padding-top: 75px;
     padding-bottom: 45px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left center;
   }
 
   .features__wrapper {
@@ -70,15 +66,19 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .features {
     padding-top: 360px;
     padding-bottom: 25px;
+    background-image: url("../img/iphone-screen-mobile@1x.png"), url("../img/iphone-screen-mobile@1x.png"), url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, auto;
+    background-position: 15% 0, 53% 0, 89% 0;
   }
 
   .features__wrapper {
     min-width: 940px;
-    padding: 0 130px;
+    padding: 0 10px;
   }
 
   .features__list {
@@ -89,5 +89,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .features__title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+
+  .features__content {
+    line-height: 30px;
   }
 }
