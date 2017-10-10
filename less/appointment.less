@@ -208,6 +208,24 @@
 }
 
 @media (min-width: 960px) {
+  .appointment__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .appointment__container {
+    margin: 0 auto;
+  }
+
+  .appointment__container:nth-child(1) {
+    width: 50%;
+  }
+
+  .appointment__container:nth-child(4) {
+    width: 50%;
+  }
+
   .appointment__wrapper {
     width: 940px;
     padding: 0 10px;
@@ -215,17 +233,18 @@
   }
 
   .appointment__half-wrapper {
-    width: 940px;
-    padding: 0 10px;
+    width: 435px;
+    padding: 70px 35px 50px 10px;
+  }
+
+  .appointment__half-wrapper {
+    width: 435px;
+    padding: 70px 10px 50px 35px;
   }
 
   .appointment__legend {
     padding-left: 32px;
     padding-right: 32px;
-  }
-
-  .appointment__content {
-    width: 50%;
   }
 
   .appointment__fieldset--call {

@@ -67,7 +67,7 @@
 
 @media (min-width: 960px) {
   .features {
-    padding-top: 360px;
+    padding-top: 0;
     padding-bottom: 25px;
     background-image: none;
   }
@@ -75,10 +75,6 @@
   .features__wrapper {
     min-width: 940px;
     padding: 0 10px;
-    background-image: url("../img/iphone-screen-mobile@1x.png"), url("../img/iphone-screen-mobile@1x.png"), url("../img/iphone-screen-mobile@1x.png");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: auto, auto, auto;
-    background-position: 15% 0, 53% 0, 89% 0;
   }
 
   .features__list {
@@ -90,6 +86,32 @@
     flex-direction: row;
     justify-content: space-around;
   }
+
+  .features__item {
+    padding-top: 360px;
+  }
+
+  .features__item:first-child {
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 0%;
+  }
+
+  .features__item:nth-child(2) {
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 0%;
+  }
+
+  .features__item:nth-child(3) {
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50% 0%;
+  }
+
 
   .features__title {
     font-size: 30px;
