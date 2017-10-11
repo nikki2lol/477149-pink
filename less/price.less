@@ -1,5 +1,6 @@
 .price {
   padding-top: 90px;
+  padding-bottom: 45px;
   text-align: center;
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white1.svg");
@@ -8,14 +9,28 @@
   background-position: auto;
 }
 
+.price__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.price__empty {
+  display: block;
+}
+
 .price__list {
   border-collapse: collapse;
+}
+
+.price__field {
+  border: 2px solid #e5e5e5;
+  padding: 20px 24px 20px 24px;
 }
 
 .price__topic {
   color: #ffffff;
   background-color: #283645;
-  background-image: url("../img/bg-hit-tablet.svg");
   background-repeat: no-repeat;
   background-size: content;
   background-position: auto;
@@ -34,9 +49,36 @@
 .price__item {
   font-size: 14px;
   text-transform: 30px;
+  width: 31px;
+  height: 31px;
+  border: 2px solid black;
 }
 
 .price__toggles {
   padding-top: 35px;
   padding-bottom: 40px;
+}
+
+@media (min-width: 660px) {
+  .price {
+    padding-top: 85px;
+    padding-bottom: 65px;
+  }
+
+  .price__wrapper {
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 960px) {
+  .price {
+    padding-top: 150px;
+    padding-bottom: 95px;
+  }
+
+  .price__wrapper {
+    width: 940px;
+    padding: 0 10px;
+  }
 }

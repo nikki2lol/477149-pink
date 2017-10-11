@@ -1,4 +1,46 @@
 .export {
+  background-color: #f2f2f2;
+  text-align: center;
+  min-height: 760px; /* задам временно, т.к. ещё не расположил все кнопки и слайдеры*/
   padding-top: 20px;
-  padding-bottom: 200px; /* пока такой отступ, пока не знаю что делать с фильтром */
+}
+
+.export__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.export__buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 660px) {
+  .export {
+    min-height: 0;
+    padding-top: 60px;
+    padding-bottom: 55px;
+  }
+
+  .export__wrapper {
+    width: 620px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 960px) {
+  .export__wrapper {
+    width: 940px;
+    padding: 0 10px;
+    background-color: #f2f2f2;
+  }
+
+  .export__buttons-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
