@@ -1,30 +1,26 @@
-.page-header--main {
-  background-color: #1d2631;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 260px 290px, cover;
-  background-position: 0% 55%, top left;
-}
-
 .page-header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top left;
+  background-position: top center;
+}
+
+.page-header--main {
+  background-color: #1d2631;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 258px 286px, cover;
+  background-position: 0% 55%, top center;
+}
+
+.page-header--main .main-nav {
+  margin-bottom: 400px;
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-}
-
-.page-header__content {
-  display: flex;
-  justify-content: space-between;
-  width: 280px;
-  padding: 20px;
-  margin: 0 auto;
 }
 
 .logo__link {
@@ -44,43 +40,37 @@
 }
 
 @media (min-width: 660px) {
+  .page-header {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+
   .page-header--main {
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: 470px 550px, cover;
-    background-position: 90% 100%, top left;
+    background-position: 90% 100%, top center;
   }
 
-  .page-header {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
-  }
-
-  .page-header__content {
-    width: 620px;
-    padding: 40px 0;
+  .page-header--main .main-nav {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 960px) {
-  .page-header--main {
-    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 560px 650px, cover;
-    background-position: 90% 100%, top left;
-  }
-
   .page-header {
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top left;
+    background-position: top center;
   }
 
-  .page-header__content {
-    padding-top: 25px;
-    padding-bottom: 40px;
+  .page-header--main {
+    background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 560px 650px, cover;
+    background-position: 90% 100%, top center;
   }
 }

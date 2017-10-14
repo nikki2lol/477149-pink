@@ -12,10 +12,10 @@
       <header class="page-header">
         <div class="page-header__wrapper">
 
-          <nav class="page-header__main-nav main-nav">
+          <nav class="main-nav">
             <div class="main-nav__wrapper">
-              <div class="page-header__content">
-              <div class="page-header__logo">
+              <div class="main-nav__content">
+              <div class="main-nav__logo">
                 <a class="logo__link" href="index.html">
                   <img class="logo__image1" src="logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
                   <img class="logo__image2" src="logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
@@ -132,7 +132,7 @@
                     </div>
                   </div>
 
-                  <div class="appointment__container appointment__container--radio">
+                  <div class="appointment__container appointment__container--gray">
                     <div class="appointment__half-wrapper">
                       <fieldset class="appointment__fieldset radio">
                         <legend class="appointment__legend">С каким приложением путешествовали?</legend>
@@ -171,6 +171,22 @@
                 </div>
 
               </form>
+
+              <section class="popup-nope popup-nope--opened">
+                <div class="popup-nope__wrapper">
+                  <b class="popup-nope__title">Что-то пошло не так!</b>
+                  <p class="popup-nope__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                  <div class="popup-nope__container"><button class="popup-nope__button">Ок</button></div>
+                </div>
+              </section>
+
+              <section class="popup-ok popup-ok--opened">
+                <div class="popup-ok__wrapper">
+                  <b class="popup-ok__title">Ваша заявка отправлена</b>
+                  <p class="popup-ok__content">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+                </div>
+                  <div class="popup-ok__container popup__container--gray"><button class="popup-ok__button">Закрыть окно</button></div>
+              </section>
 
           </section>
         </main>

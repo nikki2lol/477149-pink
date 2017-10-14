@@ -1,13 +1,19 @@
-.main-nav--main {
-  margin-bottom: 400px;
-}
-
 .main-nav {
   background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .main-nav__wrapper {
   margin: 0 auto;
+}
+
+.main-nav__content {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .main-nav__list {
@@ -19,6 +25,11 @@
   .main-nav {
     margin-bottom: 0;
   }
+
+  .main-nav__content {
+    width: 620px;
+    padding: 40px 0;
+  }
 }
 
 @media (min-width: 960px) {
@@ -28,5 +39,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .main-nav__content {
+    padding-top: 25px;
+    padding-bottom: 40px;
   }
 }

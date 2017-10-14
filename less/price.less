@@ -25,7 +25,6 @@
 
 .price__field {
   border: 2px solid #e5e5e5;
-  padding: 20px 24px 20px 24px;
 }
 
 .price__topic {
@@ -47,11 +46,7 @@
 }
 
 .price__item {
-  font-size: 14px;
-  text-transform: 30px;
-  width: 31px;
-  height: 31px;
-  border: 2px solid black;
+  line-height: 30px;
 }
 
 .price__toggles {
@@ -69,6 +64,29 @@
     width: 620px;
     padding: 0 20px;
   }
+
+  .price__list {
+    width: 100%;
+  }
+
+  .price__topic {
+    padding: 15px 20px;
+    border-right: 2px solid #e5e5e5;
+  }
+
+  .price__topic:last-child {
+    border-right: 2px solid #283645;
+  }
+
+  .price__field {
+    padding: 15px 25px 10px 25px;
+    background-color: #ffffff;
+    text-align: left;
+  }
+
+  .price__item {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -80,5 +98,17 @@
   .price__wrapper {
     width: 940px;
     padding: 0 10px;
+  }
+
+  .price__topic {
+    padding: 20px 68px;
+  }
+
+  .price__field {
+    padding: 20px 24px 15px 24px;
+  }
+
+  .price__item {
+    font-size: 18px;
   }
 }
