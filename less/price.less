@@ -19,9 +19,68 @@
 }
 
 .price__field {
+  height: 56px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
+
+.price__field--mobile1::before {
+  content: "Розовый фильтр";
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+}
+
+.price__field--mobile1::after {
+  content: "";
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.price__field--mobile2::before {
+  content: "Cмайлики";
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+}
+
+.price__field--mobile2::after {
+  content: "";
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.price__field--mobile3::before {
+  content: "Комментарии";
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+}
+
+.price__field--mobile3::after {
+  content: "";
+  width: 27px;
+  height: 26px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  display: block;
+}
+
 
 .price__topic {
   padding-top: 20px;
@@ -52,10 +111,6 @@
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;
-}
-
-.price__item {
-  line-height: 30px;
 }
 
 .price__toggles {
@@ -119,8 +174,121 @@
     text-align: left;
   }
 
-  .price__item {
-    font-size: 14px;
+  .price__field--mobile1::after,
+  .price__field--mobile2::after,
+  .price__field--mobile3::after {
+    display: none;
+  }
+
+  .price__field--name1::before {
+      content: "Розовый фильтр";
+      font-size: 14px;
+      line-height: 30px;
+      color: #283645;
+      text-transform: uppercase;
+      display: block;
+      text-align: left;
+  }
+
+  .price__field--name2::before {
+      content: "Смайлики";
+      font-size: 14px;
+      line-height: 30px;
+      color: #283645;
+      text-transform: uppercase;
+      display: block;
+      text-align: left;
+  }
+
+  .price__field--name3::before {
+      content: "Комментарии";
+      font-size: 14px;
+      line-height: 30px;
+      color: #283645;
+      text-transform: uppercase;
+      display: block;
+      text-align: left;
+  }
+
+  .price__field--window1::before {
+    content: "";
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .price__field--window2::before {
+    content: "";
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .price__field--window3::before {
+    content: "";
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .price__field--window4::before {
+    content: "";
+    width: 27px;
+    height: 26px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .price__field--window5::before {
+    content: "";
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .price__field--window6::before {
+    content: "";
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .price__field--window7::before {
+    content: "";
+    width: 27px;
+    height: 26px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .price__field--window8::before {
+    content: "";
+    width: 27px;
+    height: 26px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .price__field--window9::before {
+    content: "";
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    display: block;
   }
 }
 
@@ -141,9 +309,5 @@
 
   .price__field {
     padding: 20px 24px 15px 24px;
-  }
-
-  .price__item {
-    font-size: 18px;
   }
 }

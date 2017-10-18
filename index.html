@@ -9,8 +9,8 @@
   </head>
   <body>
 
-      <header class="page-header page-header--main">
-        <div class="page-header__wrapper">
+      <header class="page-header">
+        <div class="page-header__wrapper page-header__wrapper--main">
 
           <nav class="main-nav main-nav--opened">
             <div class="main-nav__wrapper">
@@ -22,8 +22,24 @@
                     <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
                   </picture>
                 </a>
-                <div class="logo__button">
-                  <button class="main-nav__toggle main-nav__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                <div class="page-header__button">
+                  <button class="main-nav__toggle" type="button">
+                    <svg class="main-nav__open" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewbox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+                      <g id="miu">
+                        <g id="editor_list_view_hambuger_menu_glyph">
+                          <g>
+                            <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                          </g>
+                          <g>
+                            <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <svg class="main-nav__close" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewbox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+                      <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+                    </svg>
+                    <span class="visually-hidden">Открыть меню</span></button>
                 </div>
               </div>
               <div class="main-nav__container">
@@ -136,10 +152,10 @@
                   </div>
                   <div class="reviews__buttons"><button class="reviews__button reviews__button--next"><span class="visually-hidden">Стрелка вправо</span></button></div>
                 </div>
-                  <div class="reviews__toggles slider__toggles">
-                    <button class="slider__toggle" type="button">1</button>
-                    <button class="slider__toggle" type="button">2</button>
-                    <button class="slider__toggle" type="button">3</button>
+                  <div class="reviews__toggles slider">
+                    <a class="slider__toggle slider__toggle--active" href="#" type="button"><span class="visually-hidden">1</span></a>
+                    <a class="slider__toggle" href="#" type="button"><span class="visually-hidden">2</span></a>
+                    <a class="slider__toggle" href="#" type="button"><span class="visually-hidden">3</span></a>
                   </div>
               </div>
           </div>
@@ -164,52 +180,28 @@
                 </td>
               </tr>
               <tr>
-                <td class="price__field">
-                  <div class="price__item">Розовый фильтр</div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
+                <td class="price__field price__field--name1"></td>
+                <td class="price__field price__field--window1"></td>
+                <td class="price__field price__field--window2 price__field--mobile1"></td>
+                <td class="price__field price__field--window3"></td>
               </tr>
               <tr>
-                <td class="price__field">
-                  <div class="price__item">Смайлики</div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
+                <td class="price__field price__field--name2"></td>
+                <td class="price__field price__field--window4"></td>
+                <td class="price__field price__field--window5 price__field--mobile2"></td>
+                <td class="price__field price__field--window6"></td>
               </tr>
               <tr>
-                <td class="price__field">
-                  <div class="price__item">Комментарии</div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
-                <td class="price__field">
-                  <div class="price__item"></div>
-                </td>
+                <td class="price__field price__field--name3"></td>
+                <td class="price__field price__field--window7"></td>
+                <td class="price__field price__field--window8 price__field--mobile3"></td>
+                <td class="price__field price__field--window9"></td>
               </tr>
             </table>
-            <div class="price__toggles price-slider__toggles">
-              <button class="price-slider__toggle" type="button">1</button>
-              <button class="price-slider__toggle" type="button">2</button>
-              <button class="price-slider__toggle" type="button">3</button>
+            <div class="price__toggles slider">
+              <a class="slider__toggle" href="#" type="button"><span class="visually-hidden">1</span></a>
+              <a class="slider__toggle slider__toggle--active" href="#" type="button"><span class="visually-hidden">2</span></a>
+              <a class="slider__toggle" href="#" type="button"><span class="visually-hidden">3</span></a>
             </div>
           </div>
         </section>
@@ -237,15 +229,10 @@
         </section>
 
         <section class="map">
-          <div class="map__wrapper">
+
             <h2 class="visually-hidden">Месторасположение Pink</h2>
-            <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1868650339391!2d30.321154819513808!3d59.9361769787237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1507987240832" frameborder="0" style="border:0" allowfullscreen></iframe>
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-                <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-                <img class="map__static" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x">
-              </picture>
-          </div>
+              <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1868650339391!2d30.321154819513808!3d59.9361769787237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1507987240832" frameborder="0" style="border:0" allowfullscreen></iframe>
+
         </section>
 
       </main>

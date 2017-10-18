@@ -238,6 +238,13 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .appointment__box:last-child {
+    margin-left: 0;
+    margin-right: 60px;
   }
 
   .appointment__name {
@@ -275,10 +282,6 @@
   .appointment__button {
     width: 300px;
   }
-
-  .appointment__item {
-    margin-left: 60px;
-  }
 }
 
 @media (min-width: 960px) {
@@ -298,11 +301,20 @@
   }
 
   .appointment__container:nth-child(1) {
-    width: 50%;
+    width: 460px;
   }
 
   .appointment__container:nth-child(4) {
-    width: 50%;
+    width: 460px;
+  }
+
+  .appointment__container--gray {
+    margin-left: 10px;
+  }
+
+  .appointment__container--gray .appointment__wrapper {
+    padding: 0;
+
   }
 
   .appointment__wrapper {
@@ -328,6 +340,9 @@
 
   .appointment__fieldset--call {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 0 auto;
   }
 
@@ -337,18 +352,47 @@
 
   .appointment__input--call {
     width: 376px;
+    box-sizing: border-box;
   }
 
   .appointment__input--call:first-child {
     margin-right: 35px;
   }
 
-  .appointment__input--call:last-child {
-    margin-left: 35px;
-  }
-
   .appointment__list--choice {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(1) {
+    order: 1;
+    margin-right: 58px;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(2) {
+    order: 4;
+    margin-right: 97px;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(3) {
+    order: 2;
+    margin-right: 42px;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(4) {
+    order: 5;
+    margin-right: 50px;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(5) {
+    order: 3;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(6) {
+    order: 6;
   }
 }
