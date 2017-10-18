@@ -1,6 +1,5 @@
 .research {
   display: none;
-  /*background-image: url();*/
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center left;
@@ -16,14 +15,28 @@
   .research {
     display: flex;
     text-align: left;
-    padding-top: 95px;
-    padding-bottom: 80px;
   }
 
   .research__wrapper {
-    min-width: 620px;
+    width: 620px;
     padding: 0 20px;
+    padding-top: 95px;
+    padding-bottom: 80px;
     margin: 0 auto;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px 200px, 240px 280px;
+    background-position: 5% 62%, left center;
+    position: relative;
+  }
+
+  .research__wrapper::before {
+    content: "24";
+    color: #d22856;
+    font-size: 120px;
+    position: absolute;
+    left: 8%;
+    top: 50%;
   }
 
   .research__title {
@@ -54,14 +67,30 @@
 
 @media (min-width: 960px) {
   .research {
-    padding-bottom: 115px;
-    padding-top: 150px;
+    padding: 0;
     background-color: #f2f2f2;
   }
 
   .research__wrapper {
-    min-width: 940px;
+    width: 940px;
     padding: 0 10px;
+    padding-bottom: 115px;
+    padding-top: 150px;
+    margin-bottom: 65px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 300px 345px;
+    background-position: left center;
+    position: relative;
+  }
+
+  .research__wrapper::before {
+    content: "24";
+    color: #d22856;
+    font-size: 120px;
+    position: absolute;
+    left: 8%;
+    top: 50%;
   }
 
   .research__title {

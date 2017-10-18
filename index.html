@@ -15,13 +15,13 @@
           <nav class="main-nav main-nav--opened">
             <div class="main-nav__wrapper">
               <div class="main-nav__content">
-              <div class="main-nav__logo">
-                <a class="logo__link" href="index.html">
-                  <img class="logo__image1" src="logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-                  <img class="logo__image2" src="logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
-                  <img class="logo__image3" src="logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
+                <a class="page-header__logo" href="index.html">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+                  </picture>
                 </a>
-              </div>
                 <div class="logo__button"><button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button></div>
               </div>
               <div class="main-nav__container">
@@ -147,12 +147,12 @@
           <div class="price__wrapper price-slider">
             <table class="price__list">
               <tr>
-                <td class="price__empty"></td>
+                <td class="price__topic price__topic--empty"></td>
                 <td class="price__topic">
                   <b class="price__name">База</b>
                   <div class="price__cost">1,99 usd</div>
                 </td>
-                <td class="price__topic">
+                <td class="price__topic price__topic--hit">
                   <b class="price__name">Стандарт</b>
                   <div class="price__cost">3,99 usd</div>
                 </td>
@@ -235,8 +235,15 @@
         </section>
 
         <section class="map">
-          <h2 class="visually-hidden">Месторасположение Pink</h2>
-          <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1868650339391!2d30.321154819513808!3d59.9361769787237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1507987240832" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="map__wrapper">
+            <h2 class="visually-hidden">Месторасположение Pink</h2>
+            <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.1868650339391!2d30.321154819513808!3d59.9361769787237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1507987240832" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+                <img class="map__static" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x">
+              </picture>
+          </div>
         </section>
 
       </main>

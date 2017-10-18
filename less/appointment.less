@@ -59,6 +59,33 @@
   margin-left: 23px;
 }
 
+.appointment__label {
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+.appointment__label::before {
+  content: "";
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.appointment__filter:checked + .appointment__label::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
 .appointment__input {
   width: 236px;
   border: 2px solid #e5e5e5;
@@ -91,7 +118,6 @@
 .appointment__item {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 50px;
 }
 
 .appointment__item:last-child {
@@ -227,6 +253,10 @@
     padding: 0 25px;
   }
 
+  .appointment__label {
+    padding-left: 55px;
+  }
+
   .appointment__input {
     width: 100%;
     margin-left: 20px;
@@ -244,6 +274,10 @@
 
   .appointment__button {
     width: 300px;
+  }
+
+  .appointment__item {
+    margin-left: 60px;
   }
 }
 
@@ -295,6 +329,10 @@
   .appointment__fieldset--call {
     display: flex;
     margin: 0 auto;
+  }
+
+  .appointment__label {
+    padding-left: 60px;
   }
 
   .appointment__input--call {
