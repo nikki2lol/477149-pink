@@ -15,9 +15,52 @@
 .radio__item {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 70px;
 
   .radio__item:last-child {
     padding-bottom: 42px;
+  }
+}
+
+.radio__label {
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+.radio__label::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 2px solid #e5e5e5;
+  border-radius: 50% 50%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.radio__btn:checked + .radio__label::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+@media (min-width: 660px) {
+  .radio__label {
+    padding-left: 60px;
+  }
+
+  .radio__item {
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: 960px) {
+  .radio__item {
+    margin-left: 75px;
   }
 }

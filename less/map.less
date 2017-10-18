@@ -1,9 +1,15 @@
 .map {
+  width: 100%;
   margin: 0 auto;
-  width: 320px;
-  height: 200px;
+  min-height: 200px;
   position: relative;
   background-color: #f2f2f2;
+}
+
+.map__wrapper {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .map__interactive {
@@ -16,14 +22,21 @@
 
 @media (min-width: 660px) {
   .map {
-    width: 660px;
-    height: 375px;
+    min-height: 375px;
+  }
+
+  .map__wrapper {
+    width: 620px;
   }
 }
 
 @media (min-width: 960px) {
   .map {
-    width: 960px;
-    height: 500px;
+    min-height: 500px;
+  }
+
+  .map__wrapper {
+    width: 940px;
+    padding: 0 10px;
   }
 }
