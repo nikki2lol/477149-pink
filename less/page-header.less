@@ -42,6 +42,27 @@
   display: block;
 }
 
+.page-header__logo {
+  fill: #d22856;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.page-header__logos--mobile {
+  display: block;
+}
+
+.page-header__logos--tablet,
+.page-header__logos--desktop {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -76,6 +97,15 @@
     width: 150px;
     height: 40px;
   }
+
+  .page-header__logos--tablet {
+    display: block;
+  }
+
+  .page-header__logos--mobile,
+  .page-header__logos--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 960px) {
@@ -104,6 +134,15 @@
   }
 
   .page-header__button {
+    display: none;
+  }
+
+  .page-header__logos--desktop {
+    display: block;
+  }
+
+  .page-header__logos--mobile,
+  .page-header__logos--tablet {
     display: none;
   }
 }

@@ -15,14 +15,32 @@
           <nav class="main-nav main-nav--opened">
             <div class="main-nav__wrapper">
               <div class="main-nav__content">
-                <a class="logo__link" href="index.html">
+                <a class="page-header__logo" href="index.html">
                   <picture>
                     <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
                     <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
                     <img class="page-header__image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
                   </picture>
                 </a>
-                <div class="page-header__button"><button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button></div>
+                <div class="page-header__button">
+                  <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+                    <svg class="main-nav__open" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewbox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+                      <g id="miu">
+                        <g id="editor_list_view_hambuger_menu_glyph">
+                          <g>
+                            <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                          </g>
+                          <g>
+                            <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <svg class="main-nav__close" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewbox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+                      <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+                    </svg>
+                    <span class="visually-hidden">Открыть меню</span></button>
+                </div>
               </div>
               <div class="main-nav__container">
                 <ul class="main-nav__list site-list">
@@ -68,15 +86,15 @@
                       <fieldset class="appointment__fieldset appointment__fieldset--hidden">
                         <div class="appointment__content">
                           <label class="appointment__name" for="surname">Фамилия:</label>
-                          <input class="appointment__input" type="text" id="surname" value="Укажите фамилию *">
+                          <input class="appointment__input" type="text" id="surname" placeholder="Укажите фамилию *">
                         </div>
                         <div class="appointment__content">
                           <label class="appointment__name" for="name">Имя:</label>
-                          <input class="appointment__input" type="text" id="name" value="Введите ваше имя *">
+                          <input class="appointment__input" type="text" id="name" placeholder="Введите ваше имя *">
                         </div>
                         <div class="appointment__content">
                           <label class="appointment__name" for="second-name">Отчество:</label>
-                          <input class="appointment__input" type="text" id="second-name" value="Ну и отчество тоже">
+                          <input class="appointment__input" type="text" id="second-name" placeholder="Ну и отчество тоже">
                         </div>
                       </fieldset>
                     </div>
@@ -85,7 +103,7 @@
                   <div class="appointment__container appointment__container--gray">
                     <div class="appointment__wrapper">
                       <fieldset class="appointment__fieldset">
-                        <legend class="appointment__legend">Ваши безбашенные достижения в путешествии</legend>
+                        <div class="appointment__legend appointment__legend--first">Ваши безбашенные достижения в путешествии</div>
                         <ul class="appointment__list appointment__list--choice">
                           <li class="appointment__item">
                             <input class="appointment__filter visually-hidden" type="checkbox" name="1" id="first" checked>
@@ -119,14 +137,14 @@
                   <div class="appointment__container">
                     <div class="appointment__wrapper">
                       <fieldset class="appointment__fieldset appointment__fieldset--call">
-                        <legend class="appointment__legend appointment__legend--hidden">Контактная информация</legend>
+                        <div class="appointment__legend appointment__legend--hidden">Контактная информация</div>
                           <div class="appointment__box">
                             <label class="appointment__name appointment__name--call" for="phone-number">Номер телефона</label>
-                            <input class="appointment__input appointment__input--call" type="text" id="phone-number" value="Номер, пожалуйста">
+                            <input class="appointment__input appointment__input--call" type="text" id="phone-number" placeholder="Номер, пожалуйста">
                           </div>
                           <div class="appointment__box">
                             <label class="appointment__name appointment__name--call" for="name">Адрес почты</label>
-                            <input class="appointment__input appointment__input--call" type="text" id="addres" value="Введите почту *">
+                            <input class="appointment__input appointment__input--call" type="text" id="addres" placeholder="Введите почту *">
                           </div>
                       </fieldset>
                     </div>
@@ -135,18 +153,18 @@
                   <div class="appointment__container appointment__container--gray">
                     <div class="appointment__half-wrapper">
                       <fieldset class="appointment__fieldset radio">
-                        <legend class="appointment__legend">С каким приложением путешествовали?</legend>
+                        <div class="appointment__legend appointment__legend--second">С каким приложением путешествовали?</div>
                         <ul class="radio__list">
                           <li class="radio__item">
-                            <input class="radio__btn visually-hidden" type="radio" name="platform" value="iOS" id="ios" checked>
+                            <input class="radio__btn visually-hidden" type="radio" name="platform" placeholder="iOS" id="ios" checked>
                             <label class="radio__label" for="ios">Pink для iOS</label>
                           </li>
                           <li class="radio__item">
-                            <input class="radio__btn visually-hidden" type="radio" name="platform" value="Android" id="android">
+                            <input class="radio__btn visually-hidden" type="radio" name="platform" placeholder="Android" id="android">
                             <label class="radio__label" for="android">Pink для Android</label>
                           </li>
                           <li class="radio__item">
-                            <input class="radio__btn visually-hidden" type="radio" name="platform" value="Windows" id="windows">
+                            <input class="radio__btn visually-hidden" type="radio" name="platform" placeholder="Windows" id="windows">
                             <label class="radio__label" for="windows">Windows Phone</label>
                           </li>
                         </ul>
@@ -157,7 +175,7 @@
                 <div class="appointment__container">
                   <div class="appointment__wrapper">
                     <fieldset class="appointment__fieldset textarea">
-                      <legend class="textarea__name">Опишите свои эмоции</legend>
+                      <div class="appointment__legend appointment__legend--third">Опишите свои эмоции</div>
                       <textarea class="textarea__body" rows="5" name="history">Можно прям в красках, не стесняясь в выражениях</textarea>
                     </fieldset>
                   </div>
@@ -165,14 +183,14 @@
 
                 <div class="appointment__container appointment__container--end">
                   <div class="appointment__wrapper appointment__wrapper--end">
-                    <div class="appointment__field"><input class="appointment__button" type="submit" value="Отправить форму"></div>
+                    <div class="appointment__field"><input class="appointment__button" type="submit" placeholder="Отправить форму"></div>
                     <div class="appointment__necessarily"><span class="appointment__pink">*</span> — обязательные поля</div>
                   </div>
                 </div>
 
               </form>
 
-              <section class="popup-nope popup-nope--opened">
+              <section class="popup-nope popup-nope--closed">
                 <div class="popup-nope__wrapper">
                   <b class="popup-nope__title">Что-то пошло не так!</b>
                   <p class="popup-nope__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -180,7 +198,7 @@
                 </div>
               </section>
 
-              <section class="popup-ok popup-ok--opened">
+              <section class="popup-ok popup-ok--closed">
                 <div class="popup-ok__wrapper">
                   <b class="popup-ok__title">Ваша заявка отправлена</b>
                   <p class="popup-ok__content">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
