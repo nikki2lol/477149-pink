@@ -80,9 +80,9 @@
 }
 
 .appointment__filter:checked + .appointment__label::before {
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes1.svg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 22px 16px;
   background-position: center;
 }
 
@@ -214,17 +214,13 @@
   .appointment__fieldset {
     border: 2px solid #e5e5e5;
     padding: 0;
-    padding-bottom: 30px;
     background-color: #ffffff;
+    position: relative;
   }
 
   .appointment__fieldset--hidden {
     border: 0;
     padding: 0;
-  }
-
-  .appointment__legend--hidden {
-    display: block;
   }
 
   .appointment__content {
@@ -251,6 +247,31 @@
 
   .appointment__legend {
     padding: 0 25px;
+    position: absolute;
+    top: -10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  .appointment__legend--first {
+    width: 440px;
+    left: 15%;
+  }
+
+  .appointment__legend--second {
+    width: 370px;
+    left: 21%;
+  }
+
+  .appointment__legend--hidden {
+    display: block;
+    width: 260px;
+    left: 28%;
+  }
+
+  .appointment__legend--third {
+    width: 260px;
+    left: 28%;
   }
 
   .appointment__label {
@@ -266,6 +287,7 @@
     width: 500px;
     margin-left: 0;
     margin-top: 38px;
+    box-sizing: border-box;
   }
 
   .appointment__input:nth-child(3) {
@@ -276,7 +298,7 @@
     width: 300px;
   }
 
-  .appointment__item {
+  .appointment__list--choice .appointment__item {
     margin-left: 60px;
   }
 }
@@ -293,16 +315,37 @@
 
   .appointment__container {
     margin: 0 auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    margin-bottom: 50px;
+    padding: 0;
   }
 
   .appointment__container:nth-child(1) {
-    width: 50%;
+    width: 465px;
   }
 
   .appointment__container:nth-child(4) {
-    width: 50%;
+    width: 465px;
+  }
+
+  .appointment__container--gray {
+    margin-left: 10px;
+  }
+
+  .appointment__container--gray .appointment__wrapper {
+    padding: 0;
+  }
+
+  .appointment__content {
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .appointment__half-wrapper .appointment__content {
+    margin-bottom: 52px;
+  }
+
+  .appointment__half-wrapper .appointment__content:last-child {
+    margin-bottom: 0;
   }
 
   .appointment__wrapper {
@@ -313,22 +356,53 @@
 
   .appointment__half-wrapper {
     width: 435px;
-    padding: 70px 35px 50px 10px;
+    padding: 0 35px 0 10px;
   }
 
   .appointment__half-wrapper:last-child {
     width: 435px;
-    padding: 70px 10px 50px 35px;
+    padding: 0 10px 0 35px;
   }
 
-  .appointment__legend {
-    padding-left: 32px;
-    padding-right: 32px;
+  .appointment__legend--first {
+    width: 440px;
+    left: 25%;
+  }
+
+  .appointment__legend--second {
+    width: 370px;
+    left: 8%;
+  }
+
+  .appointment__legend--hidden {
+    display: block;
+    width: 260px;
+    left: 36%;
+  }
+
+  .appointment__legend--third {
+    width: 260px;
+    left: 35%;
+  }
+
+  .appointment__fieldset {
+    padding: 0;
   }
 
   .appointment__fieldset--call {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 0 auto;
+  }
+
+  .appointment__fieldset--hidden {
+    border: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 
   .appointment__label {
@@ -337,18 +411,53 @@
 
   .appointment__input--call {
     width: 376px;
+    box-sizing: border-box;
   }
 
   .appointment__input--call:first-child {
     margin-right: 35px;
   }
 
-  .appointment__input--call:last-child {
-    margin-left: 35px;
-  }
-
   .appointment__list--choice {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(1) {
+    order: 1;
+    margin-right: 58px;
+    margin-left: 0;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(2) {
+    order: 4;
+    margin-right: 97px;
+    margin-left: 0;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(3) {
+    order: 2;
+    margin-right: 42px;
+    margin-left: 0;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(4) {
+    order: 5;
+    margin-right: 50px;
+    margin-left: 0;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(5) {
+    order: 3;
+    margin-left: 0;
+  }
+
+  .appointment__list--choice .appointment__item:nth-child(6) {
+    order: 6;
+    margin-left: 0;
   }
 }

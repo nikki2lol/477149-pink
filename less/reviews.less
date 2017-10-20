@@ -33,6 +33,7 @@
 
 .reviews__text {
   font-size: 14px;
+  line-height: 30px;
 }
 
 .reviews__toggles {
@@ -86,10 +87,36 @@
   .reviews__container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    width: 680px;
   }
 
   .reviews__buttons {
     display: block;
+    margin-top: 20px;
+  }
+
+  .reviews__button {
+    border: none;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+  }
+
+  .reviews__button--previous {
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .reviews__button--next {
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: auto;
   }
 }
