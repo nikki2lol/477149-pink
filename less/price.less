@@ -103,6 +103,18 @@
   background-repeat: no-repeat;
   background-size: content;
   background-position: auto;
+  position: relative;
+}
+
+.price__topic--hit::before {
+  content: "ХИТ";
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600;
+  transform: rotate(-45deg);
 }
 
 .price__topic--empty {
@@ -142,6 +154,17 @@
 
   .price__list {
     margin-left: -540px;
+  }
+
+  .price__topic--hit::before {
+    content: "ХИТ";
+    position: absolute;
+    top: 11%;
+    left: 4%;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    transform: rotate(-45deg);
   }
 }
 

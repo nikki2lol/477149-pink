@@ -1,6 +1,21 @@
 .panorama {
   background-color: #ffffff;
   margin: 0 auto;
+  position: relative;
+}
+
+.panorama::before {
+  content: "Панорама дня";
+  position: absolute;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #d22856;
+  top: 1%;
+  right: 2%;
 }
 
 .panorama__image {
