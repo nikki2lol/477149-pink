@@ -2,8 +2,8 @@
   background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+  background-size: 235%;
+  background-position: 48% 49%;
 
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
@@ -21,7 +21,7 @@
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 258px 286px;
-  background-position: center 64%;
+  background-position: 0 438px;
 
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
@@ -30,7 +30,7 @@
 }
 
 .page-header__wrapper--main .main-nav {
-  margin-bottom: 400px;
+  margin-bottom: 401px;
 }
 
 .page-header__image {
@@ -42,16 +42,13 @@
   display: block;
 }
 
-.page-header__logo {
+.page-header__logo:hover path {
   fill: #d22856;
+}
 
-  &:hover {
-    fill: #d22856;
-  }
-
-  &:active {
-    fill: rgba(255, 255, 255, 0.3);
-  }
+.page-header__logo:active path {
+  fill: #ffffff;
+  opacity: 0.3;
 }
 
 .page-header__logos--mobile {
@@ -65,10 +62,10 @@
 
 @media (min-width: 660px) {
   .page-header {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-back-tablet@2x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
+    background-size: 185%;
+    background-position: 48% 103%;
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -77,11 +74,10 @@
   }
 
   .page-header__wrapper--main {
-    background-color: #1d2631;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: 700px 545px;
-    background-position: center 100%;
+    background-position: 35% 100%;
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -106,6 +102,19 @@
   .page-header__logos--desktop {
     display: none;
   }
+
+  .page-header__logo:hover path {
+    fill: #d22856;
+  }
+
+  .page-header__logo:active path {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+  .page-header__logo {
+    padding-left: 9px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -125,12 +134,16 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 1050px 645px;
-    background-position: center 100%;
+    background-position: 109% 100%;
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
     }
+  }
+
+  .page-header__logo {
+    margin-left: 0;
   }
 
   .page-header__button {

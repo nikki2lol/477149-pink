@@ -15,10 +15,10 @@
 .radio__item {
   padding-top: 20px;
   padding-bottom: 20px;
+}
 
-  .radio__item:last-child {
-    padding-bottom: 42px;
-  }
+.radio__item:last-child {
+  padding-bottom: 42px;
 }
 
 .radio__label {
@@ -40,6 +40,14 @@
   border-radius: 50% 50%;
   box-sizing: border-box;
   background-color: #ffffff;
+}
+
+.radio__btn:hover + .radio__label::before {
+  border: 2px solid #000000;
+}
+
+.radio__btn:active + .radio__label::before {
+  border: 2px solid #d22856;
 }
 
 .radio__btn:checked + .radio__label::before {
