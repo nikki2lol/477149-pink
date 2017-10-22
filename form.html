@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="picturefill.js"></script>
   </head>
   <body>
 
@@ -197,15 +197,15 @@
                         <div class="appointment__legend appointment__legend--second">С каким приложением путешествовали?</div>
                         <ul class="radio__list">
                           <li class="radio__item">
-                            <input class="radio__btn visually-hidden" type="radio" name="platform" placeholder="iOS" id="ios" checked>
+                            <input class="radio__btn visually-hidden" type="radio" name="platform" id="ios" checked>
                             <label class="radio__label" for="ios">Pink для iOS</label>
                           </li>
                           <li class="radio__item">
-                            <input class="radio__btn visually-hidden" type="radio" name="platform" placeholder="Android" id="android">
+                            <input class="radio__btn visually-hidden" type="radio" name="platform" id="android">
                             <label class="radio__label" for="android">Pink для Android</label>
                           </li>
                           <li class="radio__item">
-                            <input class="radio__btn visually-hidden" type="radio" name="platform" placeholder="Windows" id="windows">
+                            <input class="radio__btn visually-hidden" type="radio" name="platform" id="windows">
                             <label class="radio__label" for="windows">Windows Phone</label>
                           </li>
                         </ul>
@@ -224,7 +224,7 @@
 
                 <div class="appointment__container appointment__container--end">
                   <div class="appointment__wrapper appointment__wrapper--end">
-                    <div class="appointment__field"><input class="appointment__button" type="submit" placeholder="Отправить форму"></div>
+                    <div class="appointment__field"><input class="appointment__button" type="submit" value="Отправить форму"></div>
                     <div class="appointment__necessarily"><span class="appointment__pink">*</span> — обязательные поля</div>
                   </div>
                 </div>

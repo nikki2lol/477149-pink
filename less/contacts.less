@@ -56,7 +56,7 @@
 
 @media (min-width: 660px) {
   .contacts {
-    padding-top: 50px;
+    padding-top: 0;
   }
 
   .contacts__list {
@@ -65,17 +65,23 @@
   }
 
   .contacts__item {
-    width: 50%;
+    width: 48%;
+    padding-bottom: 43px;
+  }
+
+  .contacts__item:last-child {
+    padding-bottom: 8px;
   }
 
   .contacts__head {
     font-size: 40px;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 47px;
+    margin-bottom: 41px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .contacts {
     padding-top: 70px;
   }
