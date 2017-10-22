@@ -108,15 +108,42 @@
   }
 
   .reviews__button--previous {
-    background-image: url("../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #bec2c7;
+    border-left: 1px solid #bec2c7;
+    transform: rotate(-45deg);
+    margin-bottom: 100px;
+  }
+
+  .reviews__button--previous:hover {
+    border-top: 1px solid #7e868f;
+    border-left: 1px solid #7e868f;
+  }
+
+  .reviews__button--previous:active {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .reviews__button--next {
-    background-image: url("../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #bec2c7;
+    border-right: 1px solid #bec2c7;
+    transform: rotate(45deg);
+    margin-bottom: 100px;
+  }
+
+  .reviews__button--next:hover {
+    border-top: 1px solid #7e868f;
+    border-right: 1px solid #7e868f;
+  }
+
+  .reviews__button--next:active {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
