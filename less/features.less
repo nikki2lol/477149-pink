@@ -84,8 +84,8 @@
     text-align: left;
     width: 50%;
     padding-left: 50%;
-    padding-top: 79px;
-    padding-bottom: 47px;
+    padding-top: 75px;
+    padding-bottom: 10px;
   }
 
   .features__content {
@@ -96,7 +96,7 @@
 @media (min-width: 960px) {
   .features {
     padding-top: 0;
-    padding-bottom: 25px;
+    padding-bottom: 0;
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -116,19 +116,19 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .features__item {
-    padding-top: 360px;
+    padding-top: 355px;
     width: 33%;
   }
 
   .features__item:first-child {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
+    background-size: 292px 302px;
+    background-position: 0 0;
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -139,8 +139,8 @@
   .features__item:nth-child(2) {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
+    background-size: 292px 302px;
+    background-position: 65% 0;
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -151,8 +151,8 @@
   .features__item:nth-child(3) {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
+    background-size: 292px 302px;
+    background-position: 100% 0;
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -163,10 +163,30 @@
   .features__title {
     font-size: 30px;
     line-height: 30px;
-    padding-bottom: 30px;
+    font-weight: 700;
+    padding-bottom: 26px;
+  }
+
+  .features__title:first-child {
+    width: 185px;
+    margin: 0 auto;
+  }
+
+  .features__title:nth-child(2) {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .features__title:first-child {
+    width: 220px;
+    margin: 0 auto;
   }
 
   .features__content {
+    font-size: 18px;
     line-height: 30px;
+    width: 237px;
+    margin: 0 auto;
+    padding-bottom: 0;
   }
 }

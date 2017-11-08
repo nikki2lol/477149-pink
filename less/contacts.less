@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 37px;
+  padding-top: 42px;
   padding-bottom: 20px;
 }
 
@@ -57,11 +57,13 @@
 @media (min-width: 660px) {
   .contacts {
     padding-top: 0;
+    padding-bottom: 15px;
   }
 
   .contacts__list {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 43px;
   }
 
   .contacts__item {
@@ -77,17 +79,19 @@
     font-size: 40px;
     font-weight: 300;
     line-height: 47px;
-    margin-bottom: 41px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 960px) {
   .contacts {
     padding-top: 70px;
+    padding-bottom: 5px;
   }
 
   .contacts__list {
     flex-wrap: nowrap;
+    margin-top: 59px;
   }
 
   .contacts__item:first-child {
@@ -105,5 +109,10 @@
   .contacts__head {
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: 8px;
+  }
+
+  .contacts__text {
+    padding-top: 20px;
   }
 }

@@ -3,7 +3,7 @@
   padding-bottom: 45px;
   text-align: center;
   background-color: #f2f2f2;
-  background-image: url("../img/bg-triangle-white1.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: auto;
@@ -19,7 +19,7 @@
 }
 
 .price__field {
-  height: 56px;
+  height: 58px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -98,14 +98,13 @@
   padding-bottom: 21px;
   color: #ffffff;
   background-color: #283645;
-  border: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
 }
 
 .price__topic--hit {
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
-  background-size: content;
-  background-position: auto;
   position: relative;
 }
 
@@ -137,7 +136,7 @@
 }
 
 .price__toggles {
-  padding-top: 41px;
+  padding-top: 37px;
   padding-bottom: 2px;
   margin-left: 15px;
 }
@@ -149,7 +148,8 @@
   }
 
   .price__topic {
-    width: 280px;
+    width: 276px;
+    box-sizing: content-box;
   }
 
   .price__wrapper table {
@@ -191,14 +191,12 @@
     width: 155px;
     padding: 9px 0;
     border-right: 2px solid #e5e5e5;
-    box-sizing: border-box;
+    box-sizing: conent-box;
   }
 
   .price__topic--hit {
     background-image: url("../img/bg-hit-tablet.svg");
     background-repeat: no-repeat;
-    background-size: content;
-    background-position: auto;
   }
 
   .price__topic:last-child {
@@ -351,6 +349,12 @@
     vertical-align: bottom;
     margin-left: 32%;
   }
+
+  .price__toggles {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-width: 960px) {
@@ -369,6 +373,18 @@
   }
 
   .price__field {
-    padding: 20px 0 15px 24px;
+    padding: 12px 0 15px 20px;
+  }
+
+  .price__field--name1::before {
+    font-size: 18px;
+  }
+
+  .price__field--name2::before {
+    font-size: 18px;
+  }
+
+  .price__field--name3::before {
+    font-size: 18px;
   }
 }
