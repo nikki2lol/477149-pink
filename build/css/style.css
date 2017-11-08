@@ -1198,7 +1198,7 @@ input[type="radio"].visually-hidden {
     width: 200px;
     margin: 0 auto;
   }
-  .features__title:first-child {
+  .features__title:last-child {
     width: 220px;
     margin: 0 auto;
   }
