@@ -784,7 +784,7 @@ input[type="radio"].visually-hidden {
 @media (min-width: 660px) {
   .download {
     background-color: transparent;
-    padding-top: 89px;
+    padding-top: 91px;
     padding-bottom: 111px;
   }
   .download__wrapper {
@@ -815,15 +815,11 @@ input[type="radio"].visually-hidden {
     line-height: 50px;
     font-weight: 300;
     color: #ffffff;
-    padding-bottom: 29px;
+    padding-bottom: 27px;
     margin-left: 55px;
   }
   .download__content {
     font-size: 18px;
-    line-height: 24px;
-    font-weight: 300;
-    color: #ffffff;
-    margin: 0 auto;
   }
 }
 @media (min-width: 960px) {
@@ -1040,7 +1036,7 @@ input[type="radio"].visually-hidden {
   width: 280px;
   padding: 0 20px;
   padding-top: 6px;
-  padding-bottom: 286px;
+  padding-bottom: 289px;
   margin: 0 auto;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
