@@ -320,10 +320,10 @@ input[type="radio"].visually-hidden {
   .appointment__box::after {
     content: "";
     width: 60px;
-    height: 57px;
+    height: 55px;
     position: absolute;
     top: 40px;
-    right: 60px;
+    right: 0;
     background-color: #e5e5e5;
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
@@ -333,10 +333,10 @@ input[type="radio"].visually-hidden {
   .appointment__box:nth-child(2)::after {
     content: "";
     width: 60px;
-    height: 57px;
+    height: 55px;
     position: absolute;
     top: 40px;
-    right: 60px;
+    right: 0;
     background-color: #e5e5e5;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
@@ -557,6 +557,7 @@ input[type="radio"].visually-hidden {
   width: 280px;
   padding-top: 15px;
   padding-bottom: 35px;
+  margin-bottom: 9px;
   border: 3px solid #d22856;
   border-radius: 30px;
   -webkit-box-sizing: border-box;
@@ -624,6 +625,12 @@ input[type="radio"].visually-hidden {
   font-size: 0;
   display: block;
   height: 34px;
+}
+@media (min-width: 960px) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 .contacts {
   padding-top: 42px;
@@ -866,9 +873,8 @@ input[type="radio"].visually-hidden {
 .export {
   background-color: #f2f2f2;
   text-align: center;
-  min-height: 760px;
-  /* задам временно, т.к. ещё не расположил все кнопки и слайдеры*/
   padding-top: 20px;
+  padding-bottom: 79px;
 }
 .export__wrapper {
   width: 280px;
@@ -885,8 +891,8 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
 }
 .export__panel {
-  min-height: 360px;
   text-align: center;
+  margin-top: 40px;
 }
 .export__filters {
   display: -webkit-box;
@@ -896,11 +902,14 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 34px;
+  margin-right: 45px;
 }
 .export__scale--mobile {
   width: 240px;
@@ -908,13 +917,15 @@ input[type="radio"].visually-hidden {
   height: 2px;
   margin: 10px 20px;
   position: relative;
+  margin-top: 29px;
+  margin-bottom: 73px;
 }
 .export__scale--mobile::before {
   content: "";
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   position: absolute;
-  top: -3px;
+  top: -5px;
   left: 80%;
   background-color: #f2f2f2;
   border: 2px solid #d22856;
@@ -943,7 +954,6 @@ input[type="radio"].visually-hidden {
         justify-content: space-around;
   }
   .export__panel {
-    height: auto;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -964,8 +974,9 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-bottom: 1px solid #dddfe0;
   }
   .export__filters {
@@ -978,10 +989,10 @@ input[type="radio"].visually-hidden {
             flex-direction: column;
   }
   .export__scale--first {
-    width: 240px;
+    width: 200px;
     background-color: #000000;
     height: 2px;
-    margin: 10px 20px;
+    margin: 25px 20px;
     position: relative;
   }
   .export__toggle {
@@ -998,17 +1009,17 @@ input[type="radio"].visually-hidden {
     background-color: #d22856;
   }
   .export__scale--second {
-    width: 240px;
+    width: 200px;
     background-color: #000000;
     height: 2px;
-    margin: 10px 20px;
+    margin: 25px 20px;
     position: relative;
   }
   .export__scale--third {
-    width: 240px;
+    width: 200px;
     background-color: #000000;
     height: 2px;
-    margin: 10px 20px;
+    margin: 25px 20px;
     position: relative;
   }
   .export__scale--mobile {
@@ -1016,6 +1027,9 @@ input[type="radio"].visually-hidden {
   }
   .export__scale--mobile::before {
     display: none;
+  }
+  .export__buttons-container {
+    margin-top: 65px;
   }
 }
 @media (min-width: 960px) {
@@ -1246,8 +1260,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 .inner-footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 2px;
 }
 .inner-footer__wrapper {
   width: 280px;
@@ -1266,10 +1279,10 @@ input[type="radio"].visually-hidden {
 }
 .inner-footer__logo {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 32px;
 }
 .inner-footer__social {
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 .inner-footer__link:hover .inner-footer__logo path {
   fill: #d22856;
@@ -1307,8 +1320,8 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 960px) {
   .inner-footer {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 0;
   }
   .inner-footer__wrapper {
     min-width: 940px;
@@ -1536,7 +1549,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 235%;
-  background-position: 48% 49%;
+  background-position: 50% 250px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header {
@@ -1594,7 +1607,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-repeat: no-repeat;
     background-size: 185%;
-    background-position: 48% 103%;
+    background-position: 49% 254px;
   }
   .page-header__wrapper--main {
     background-image: url("../img/iphone-hand-tablet@1x.png");
@@ -1683,8 +1696,8 @@ input[type="radio"].visually-hidden {
   background-size: cover;
 }
 .page-main__epilogue {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 22px;
+  padding-bottom: 42px;
   text-align: center;
 }
 .page-main__epilogue-text {
@@ -1735,15 +1748,15 @@ input[type="radio"].visually-hidden {
 .panorama::before {
   content: "Панорама дня";
   position: absolute;
-  padding: 10px 20px;
+  padding: 7px 19px;
   color: #ffffff;
   font-size: 12px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #d22856;
-  top: 1%;
-  right: 2%;
+  top: 0;
+  right: 7%;
 }
 .panorama__image {
   width: 100%;
@@ -1757,13 +1770,13 @@ input[type="radio"].visually-hidden {
 }
 .panorama__info {
   background-color: #f2f2f2;
-  padding: 20px 17px 25px 17px;
+  padding: 16px 17px 16px 17px;
   margin-bottom: 20px;
 }
 .panorama__user {
   font-size: 14px;
   font-weight: 700;
-  padding-right: 4px;
+  line-height: 24px;
 }
 .panorama__time {
   font-size: 12px;
@@ -1773,12 +1786,26 @@ input[type="radio"].visually-hidden {
 .panorama__content {
   font-size: 14px;
   min-width: 100%;
+  line-height: 24px;
 }
 .panorama__counter {
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
   padding-left: 33px;
+  margin-top: 8px;
+  position: relative;
+}
+.panorama__counter::before {
+  content: "";
+  position: absolute;
+  left: 1%;
+  top: 32%;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-width: 660px) {
   .panorama__wrapper {
@@ -1787,6 +1814,11 @@ input[type="radio"].visually-hidden {
   }
   .panorama__image {
     height: 510px;
+  }
+  .panorama::before {
+    padding: 5px 20px;
+    top: 9%;
+    right: 3%;
   }
   .panorama__info {
     margin-bottom: 50px;
@@ -1953,7 +1985,7 @@ input[type="radio"].visually-hidden {
 }
 .prelude {
   padding-top: 50px;
-  padding-bottom: 55px;
+  padding-bottom: 45px;
 }
 .prelude__wrapper {
   width: 280px;
@@ -1966,12 +1998,19 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 660px) {
   .prelude {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 93px;
+    padding-bottom: 75px;
   }
   .prelude__wrapper {
     width: 620px;
     padding: 0 20px;
+  }
+  .prelude__text {
+    width: 440px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
   }
 }
 @media (min-width: 960px) {
@@ -2690,7 +2729,9 @@ input[type="radio"].visually-hidden {
 .shoot__info {
   max-width: 246px;
   background-color: #f2f2f2;
-  padding: 20px 17px 25px 17px;
+  padding: 19px 17px 21px 17px;
+  font-size: 14px;
+  line-height: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2705,7 +2746,6 @@ input[type="radio"].visually-hidden {
 .shoot__user {
   font-size: 14px;
   font-weight: 700;
-  padding-right: 4px;
 }
 .shoot__time {
   font-size: 12px;
@@ -2724,6 +2764,7 @@ input[type="radio"].visually-hidden {
   color: #d22856;
   text-transform: uppercase;
   padding-left: 33px;
+  margin-top: 8px;
   position: relative;
 }
 .shoot__counter::before {
@@ -2751,8 +2792,11 @@ input[type="radio"].visually-hidden {
     margin-right: 20px;
   }
   .shoot__info {
-    max-width: 266px;
-    min-height: 155px;
+    max-width: 300px;
+    height: 155px;
+    padding: 17px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .shoot__counter {
     padding-left: 0;
@@ -2760,6 +2804,10 @@ input[type="radio"].visually-hidden {
   .shoot__counter::before {
     top: 28%;
     left: 90%;
+  }
+  .shoot__image {
+    width: 300px;
+    height: 400px;
   }
 }
 @media (min-width: 960px) {
@@ -2831,24 +2879,29 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
 }
 .social__item {
-  width: 50px;
-  height: 50px;
+  width: 47px;
+  height: 47px;
   border: 2px solid #e9ebec;
   border-radius: 50% 50%;
   text-align: center;
+  margin-right: 9px;
 }
 .social__item:hover {
   border: 2px solid #000000;
 }
 .social__item:active {
   opacity: 0.3;
+}
+.social-item {
+  margin-right: 0;
 }
 .social__link {
   display: block;
@@ -2960,9 +3013,9 @@ input[type="radio"].visually-hidden {
   }
   .title__text {
     font-size: 50px;
-    line-height: 50px;
-    padding-top: 80px;
-    padding-bottom: 145px;
+    line-height: 55px;
+    padding-top: 74px;
+    padding-bottom: 146px;
   }
 }
 @media (min-width: 960px) {

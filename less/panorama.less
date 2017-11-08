@@ -7,15 +7,15 @@
 .panorama::before {
   content: "Панорама дня";
   position: absolute;
-  padding: 10px 20px;
+  padding: 7px 19px;
   color: #ffffff;
   font-size: 12px;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #d22856;
-  top: 1%;
-  right: 2%;
+  top: 0;
+  right: 7%;
 }
 
 .panorama__image {
@@ -32,14 +32,14 @@
 
 .panorama__info {
   background-color: #f2f2f2;
-  padding: 20px 17px 25px 17px;
+  padding: 16px 17px 16px 17px;
   margin-bottom: 20px;
 }
 
 .panorama__user {
   font-size: 14px;
   font-weight: 700;
-  padding-right: 4px;
+  line-height: 24px;
 }
 
 .panorama__time {
@@ -51,6 +51,7 @@
 .panorama__content {
   font-size: 14px;
   min-width: 100%;
+  line-height: 24px;
 }
 
 .panorama__counter {
@@ -58,6 +59,20 @@
   color: #d22856;
   text-transform: uppercase;
   padding-left: 33px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.panorama__counter::before {
+  content: "";
+  position: absolute;
+  left: 1%;
+  top: 32%;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 660px) {
@@ -68,6 +83,12 @@
 
   .panorama__image {
     height: 510px;
+  }
+
+  .panorama::before {
+    padding: 5px 20px;
+    top: 9%;
+    right: 3%;
   }
 
   .panorama__info {

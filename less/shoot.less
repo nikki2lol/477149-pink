@@ -19,7 +19,9 @@
 .shoot__info {
   max-width: 246px;
   background-color: #f2f2f2;
-  padding: 20px 17px 25px 17px;
+  padding: 19px 17px 21px 17px;
+  font-size: 14px;
+  line-height: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,7 +30,6 @@
 .shoot__user {
   font-size: 14px;
   font-weight: 700;
-  padding-right: 4px;
 }
 
 .shoot__time {
@@ -48,6 +49,7 @@
   color: #d22856;
   text-transform: uppercase;
   padding-left: 33px;
+  margin-top: 8px;
   position: relative;
 }
 
@@ -76,8 +78,10 @@
   }
 
   .shoot__info {
-    max-width: 266px;
-    min-height: 155px;
+    max-width: 300px;
+    height: 155px;
+    padding: 17px 20px;
+    box-sizing: border-box;
   }
 
   .shoot__counter {
@@ -87,6 +91,11 @@
   .shoot__counter::before {
     top: 28%;
     left: 90%;
+  }
+
+  .shoot__image {
+    width: 300px;
+    height: 400px;
   }
 }
 
